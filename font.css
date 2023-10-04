@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    src: url('fonts/proxima/Proximanova-regular.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    font-weight: bold;
+    src: url('fonts/proxima/Proximanovaexcn-bold.otf');
+}
