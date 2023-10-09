@@ -106,8 +106,7 @@ section:nth-child(4) {
 
 section:last-child {
   background-color: #53d153;
-padding-bottom: 0;
-
+  padding-bottom: 0;
 }
 
 section h2 {
@@ -143,6 +142,7 @@ section h6 {
   font: 1em "Open Sans";
   color: #b7b3b3;
   padding-bottom: 20px;
+  padding: 0 10px;
 }
 
 section h2,
@@ -156,6 +156,7 @@ section h6 {
   flex-direction: column;
   align-items: center;
 }
+
 article {
   max-width: 280px;
   text-align: center;
@@ -230,7 +231,7 @@ article a {
   width: 100%;
   max-width: 550px;
   height: 50vh;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 #text {
@@ -239,6 +240,7 @@ article a {
   justify-content: space-between;
   align-items: center;
   margin: 55px auto 18px auto;
+  padding: 0 10px;
 }
 
 #text p,
@@ -260,6 +262,7 @@ article a {
   display: flex;
   justify-content: center;
 }
+
 #ceopic {
   width: 42px;
   height: 42px;
@@ -328,10 +331,11 @@ section #anchor {
   max-width: 830px;
   margin: auto;
   flex-wrap: wrap;
+  padding-top: 40px;
 }
 .item {
   max-width: 130px;
-  margin-right: 40px;
+  margin: 0 20px 0 20px;
 }
 
 .circle {
@@ -390,11 +394,10 @@ section #anchor {
   height: 20px;
 }
 
-#buttonddiv{
-    background-color: #3eba3e;
-    text-align: center;
-    margin-top: 40px;
-
+#buttonddiv {
+  background-color: #3eba3e;
+  text-align: center;
+  margin-top: 40px;
 }
 
 #buttonddiv button {
@@ -406,6 +409,160 @@ section #anchor {
   border-radius: 26px;
   margin: 25px auto;
   padding: 15px 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #000;
+}
+
+.f-col {
+  max-width: 330px;
+  margin: auto;
+}
+.f-col {
+  padding: 15px 10px;
+}
+.f-row h3 {
+  font: 1em Montserrat;
+  letter-spacing: 3px;
+  color: #ddd;
+  text-align: center;
+}
+
+.f-row hr {
+  border: 0;
+  border-top: 2px solid #ddd;
+  width: 30px;
+  margin: 5px auto 15px auto;
+}
+
+.f-row p {
+  font: 1em "Proxima Nova";
+  color: #ccc;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.post img {
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+.post h4 {
+  font: 1em Montserrat;
+  color: #ccc;
+  padding-bottom: 5px;
+}
+.post h6 {
+  font: 0.8em Montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.post {
+  display: flex;
+  padding-bottom: 10px;
+}
+#green {
+  background-color: #53d153;
+}
+#yellow {
+  background-color: #ffba00;
+}
+#blue {
+  background-color: #089cea;
+}
+#orange {
+  background-color: #f34c03;
+}
+#yellow {
+  background-color: #ffba00;
+}
+
+#forum {
+  display: flex;
+  flex-direction: column;
+  max-height: 230px;
+}
+#forum input,
+#forum textarea,
+#forum button {
+  display: inline-block;
+  padding: 10px 13px;
+  outline: none;
+}
+
+#forum input,
+#forum textarea {
+  background-color: #434343;
+  margin-bottom: 2px;
+  border: 0;
+}
+
+#forum input:first-child {
+  border-radius: 4px 0;
+}
+
+#forum button {
+  background-color: #2b9b2b;
+  border: 0;
+  border-radius: 0 0 4px 4px;
+  font: 0.9em "Proxima Nova";
+  color: #fff;
+}
+
+.f-media {
+  background-color: #212121;
+}
+.f-media h3 {
+  font: 1em Montserrat;
+  letter-spacing: 3px;
+  color: #101010;
+  text-align: center;
+}
+
+.f-media hr {
+  border: 0;
+  border-top: 2px solid #0f0f0f;
+  width: 30px;
+  margin: 5px auto 15px auto;
+}
+
+.media-row #imgs {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+.media-row #imgs img {
+  max-width: 300px;
+}
+.media {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.media:last-child {
+  width: 300px;
+}
+
+.f-maker {
+  padding: 7px 0;
+}
+
+.f-maker p {
+  font: 1em "Proxima Nova";
+  color: #fff;
+  text-align: center;
 }
 
 /* Responsive Design */
@@ -480,5 +637,21 @@ section #anchor {
   }
   #icons .fimg {
     max-width: 160px;
+  }
+
+  .f-row {
+    display: flex;
+    justify-content: center;
+  }
+  .f-col {
+    margin: 0 30px;
+  }
+
+  .media:last-child {
+    margin-left: 30px;
+  }
+
+  .media {
+    justify-content: start;
   }
 }
